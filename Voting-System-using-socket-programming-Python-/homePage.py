@@ -4,7 +4,7 @@ import subprocess
 from tkinter import *
 from Admin import AdmLogin
 from voter import voterLogin
-
+from pathlib import Path
 
 def Home(root, frame1, frame2):
 
@@ -31,8 +31,7 @@ def Home(root, frame1, frame2):
     #New Tab
     # newTab = Button(frame1, text="New Window", width=15, command = lambda: sb_p.call('start python homePage.py', shell=True))
 
-
-    newTab = Button(frame1, text="New Window", width=15, command=lambda: subprocess.call('python3 homePage.py', shell=True))
+    newTab = Button(frame1, text="New Window", width=15, command=lambda: subprocess.Popen('python3 Voting-System-using-socket-programming-Python-/homePage.py', shell=True))
 
 
     Label(frame1, text="").grid(row = 2,column = 0)

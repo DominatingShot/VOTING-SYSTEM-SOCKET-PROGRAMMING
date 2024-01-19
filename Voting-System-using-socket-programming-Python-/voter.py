@@ -5,7 +5,8 @@ from VotingPage import votingPg
 
 def establish_connection():
     host = socket.gethostname()
-    port = 4001
+    print(host)
+    port = 4203
     client_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     client_socket.connect((host, port))
     print(client_socket)

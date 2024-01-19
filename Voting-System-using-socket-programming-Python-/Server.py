@@ -45,7 +45,9 @@ def voting_Server():
 
     serversocket = socket.socket()
     host = socket.gethostname()
-    port = 4001
+    print("HI")
+    print(host,"server")
+    port = 4203
 
     ThreadCount = 0
 
